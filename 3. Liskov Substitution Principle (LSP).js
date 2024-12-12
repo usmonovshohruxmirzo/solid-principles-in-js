@@ -5,21 +5,21 @@
 
 // * Bad Example (Not following LSP):
 // * A Rectangle class with a Square subclass:
-// class Rectangle {
-//   setWidth(width) {
-//     this.width = width;
-//   }
+class Rectangle {
+  setWidth(width) {
+    this.width = width;
+  }
 
-//   setHeight(height) {
-//     this.height = height;
-//   }
-// }
+  setHeight(height) {
+    this.height = height;
+  }
+}
 
-// class Square extends Rectangle {
-//   setWidth(width) {
-//     this.width = this.height = width;
-//   }
-// }
+class Square extends Rectangle {
+  setWidth(width) {
+    this.width = this.height = width;
+  }
+}
 
 //* Good Example (Following LSP):
 //* Separate Rectangle and Square with their own logic:
